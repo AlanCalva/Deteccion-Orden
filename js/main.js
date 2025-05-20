@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ✅ Enviar la frase completa al endpoint chat.php y recibir el comando procesado
 async function enviarMensaje(frase) {
-  const url = "http://localhost/API-GPT-PHP/endpoints/chat.php"; // Cambia esta URL si es necesario
+  const url = "http://98.80.142.242/API-GPT-PHP/endpoints/chat.php"; // Cambia esta URL si es necesario
   const datos = { message: frase };
 
   try {
@@ -101,7 +101,7 @@ async function enviarMensaje(frase) {
 
 // ✅ Enviar el comando a tu API para almacenarlo
 async function enviarStatus(status) {
-  const url = "http://localhost/iot-api-php/controllers/AddIotDevice.php"; // Cambia esta URL si tu endpoint está en otro lugar
+  const url = "http://98.80.142.242/iot-api-php/controllers/AddIotDevice.php"; // Cambia esta URL si tu endpoint está en otro lugar
   const datos = { status: status };
 
   try {
