@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento de Voz</title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.mic-icon {
+    width: 100px;
+    height: auto;
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00aaff;
+}
+
+footer {
+    padding: 15px;
+    background: #004989;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+
+<body>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+        <header class="bg-primary text-white text-center py-3 w-100">
+            <h1>Reconocimiento de Voz</h1>
+        </header>
+    
+        <main class="d-flex justify-content-center align-items-center flex-grow-1">
+            <div class="card text-center p-5">
+                <img src="assets/img/micro.gif" class="card-img-top mx-auto" style="width: 8rem;" alt="Micrófono">
+                <div class="card-body">
+                    <h2 id="outputText" class="text-center fs-4 fw-light"></h2>
+                    <button id="startBtn" class="btn btn-success m-3">Iniciar Reconocimiento</button>
+                    <h4 id="msgText" class="text-center fs-6 text-danger"></h4>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="bg-dark text-white text-center py-3 w-100">
+            <p>Desarrollado por: Alan Calva Hernandez | IHC</p>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
